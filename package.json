@@ -1,0 +1,35 @@
+{
+  "name": "transparent-browser",
+  "version": "1.0.0",
+  "description": "Transparent Browser - No more green screen",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "startforge": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hookedupjoe/transparent-browser.git"
+  },
+  "author": "W Joseph Francis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hookedupjoe/transparent-browser/issues"
+  },
+  "homepage": "https://github.com/hookedupjoe/transparent-browser#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.2.1",
+    "@electron-forge/maker-deb": "^6.2.1",
+    "@electron-forge/maker-rpm": "^6.2.1",
+    "@electron-forge/maker-squirrel": "^6.2.1",
+    "@electron-forge/maker-zip": "^6.2.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.2.1",
+    "electron": "^25.3.2"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
