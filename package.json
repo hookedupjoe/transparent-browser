@@ -4,7 +4,8 @@
   "description": "Transparent Browser - No more green screen",
   "main": "main.js",
   "scripts": {
-    "start": "electron-forge start",
+    "start": "electron .",
+    "vite": "electron . url=http://localhost:5173/",
     "startforge": "electron-forge start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "electron-forge package",
