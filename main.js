@@ -9,6 +9,7 @@ console.log('args',args);
 var showFrame = false;
 var showDev = false;
 var loadURL = '';
+var loadFN = '';
 
 var startPos = {
     x: 0,
@@ -34,7 +35,10 @@ if( args && args.length ){
                         startPos[tmpArgName] = parseInt(tmpArgVal);
                     } else if( tmpArgName == 'url' ){
                         loadURL = tmpArgVal;
+                    } else if( tmpArgName == 'filename' ){
+                        loadFN = tmpArgVal;
                     }
+                    
                 }
             } catch (theErr) {
                 console.log("error getting params",theErr)
@@ -76,7 +80,7 @@ const loadMainWindow = () => {
     if( loadURL ){
         mainWindow.loadURL(loadURL);
     } else {
-        mainWindow.loadFile(path.join(__dirname, "index.html"));  
+        mainWindow.loadFile(loadFN || path.join(__dirname, "index.html"));  
     }
    // mainWindow.loadFile(path.join(__dirname, "index.html"));
    

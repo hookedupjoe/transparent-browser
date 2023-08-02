@@ -6,6 +6,8 @@
   "scripts": {
     "start": "electron .",
     "vite": "electron . url=http://localhost:5173/",
+    "puppets": "electron .  --showdevno url=http://localhost:33480/DigitalPuppet/",
+    "image": "electron .  --showdev filename=image.html/",
     "startforge": "electron-forge start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "electron-forge package",
